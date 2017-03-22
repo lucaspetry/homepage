@@ -70,6 +70,7 @@ p {
 #navigation {
   height: 100%;
   margin: 0;
+  min-width: 200px;
   padding-left: 15%;
   padding-top: 5%;
   position: fixed;
