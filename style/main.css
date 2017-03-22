@@ -34,12 +34,12 @@ p {
 #main {
   font-size: 1.3rem;
   height: 100%;
-  margin-left: 40%;
+  margin-left: 42%;
   margin-right: 15%;
   padding-top: 3%;
   padding-bottom: 3%;
   position: relative;
-  width: 45%;
+  width: 43%;
 }
 
 #main h3 {
@@ -52,6 +52,7 @@ p {
   height: 200px;
   margin-bottom: 3%;
   max-width: 100%;
+  object-fit: contain;
   width: 200px;
 }
 
