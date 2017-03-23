@@ -6,39 +6,52 @@
     <meta name="author" content="Lucas May Petry">
     <title>Lucas May Petry</title>
     <link rel="stylesheet" type="text/css" href="style/main.css">
+    <script src="scripts/navigation.js"></script>
   </head>
   <body>
-    
     <div id="navigation">
       <img id="profile_img" src="images/profile.jpg">
       <div id="title">Lucas May Petry</div>
       <div id="subtitle">lucaspetry.github.io</div>
       <ul>
-        <li><a href="http://lucaspetry.github.io">About Me</a></li>
+        <li><a href="#" onclick="changeContent('content_home')">Home</a></li>
         <li><a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4477684E2" target="_blank">Curriculum (Lattes)</a></li>
-        <li><a href="http://lucaspetry.github.io">Projects</a></li>
-        <li><a href="http://lucaspetry.github.io">Contact Me</a></li>
+        <li><a href="#" onclick="changeContent('content_projects')">Projects</a></li>
+        <li><a href="#" onclick="changeContent('content_contact')">Contact Me</a></li>
         <li><a href="https://github.com/lucaspetry" target="_blank">View My GitHub Profile</a></li>
       </ul>
     </div>
     
     <div id="main">
-      <h3>Welcome To My Page</h3>
-      <br>
-      <p>Hello world!</p>
-      <br><br>
-      <h3>Coming Soon...</h3>
-      <br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec libero metus. In sodales sapien ac lobortis pretium. Nunc tristique risus eu magna vehicula lobortis. Praesent eros ante, sagittis non finibus volutpat, consectetur ac elit. Nullam fermentum tempor velit, nec luctus ligula lobortis quis. Etiam cursus ultrices nisi. Sed et elit ac felis tincidunt congue a nec neque. Sed consequat at sem in pretium. Vivamus sem est, ornare vitae felis id, condimentum volutpat ligula. Aenean euismod ante varius risus iaculis condimentum.</p>
-      <br>
-      <p>Integer ac posuere elit, id mattis orci. Curabitur ligula nulla, bibendum ut augue id, tincidunt scelerisque est. Duis sit amet elit placerat, ornare mauris a, ullamcorper lorem. Donec bibendum sapien ultrices, mattis eros ac, pulvinar erat. Nulla vitae aliquam ex, in efficitur augue. Duis ultricies vestibulum orci, nec elementum erat tristique sed. Integer euismod ac tortor ac consectetur. Morbi a nulla semper, malesuada est quis, luctus est. Donec rhoncus porttitor pharetra. Cras tristique ligula non massa consectetur scelerisque.</p>
-      <br>
-      <p>Sed consequat faucibus tempus. Nulla id lacus risus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus est eros, ornare ac turpis ut, pharetra finibus lorem. Ut imperdiet massa lobortis tincidunt bibendum. Suspendisse interdum auctor egestas. Etiam feugiat faucibus ornare. Sed euismod lacinia mi eu convallis. Ut ut arcu sit amet arcu pretium porttitor.</p>
-      <br>
-      <p>Maecenas mi eros, finibus quis suscipit sit amet, efficitur eu ex. In eu iaculis magna. Mauris ac erat a lorem cursus volutpat vehicula vitae leo. Pellentesque ultricies, neque nec ultrices posuere, tellus magna interdum quam, eu feugiat ex purus eget nibh. Nulla vestibulum orci eget dui semper blandit. Donec in vulputate lacus. Fusce pellentesque, diam sed sodales aliquet, nunc enim tincidunt libero, eu gravida diam libero at lacus. Aenean eleifend, quam ut sodales sagittis, mi ex eleifend ante, nec ornare sapien augue at nisi. Aliquam erat volutpat. Suspendisse gravida tempor erat nec auctor. In nec sollicitudin quam. In hac habitasse platea dictumst. Donec sagittis suscipit diam at tincidunt.</p>
-      <br>
-      <p>Aliquam erat volutpat. Aenean mattis mauris id urna venenatis semper. Interdum et malesuada fames ac ante ipsum primis in faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula euismod ante, vitae congue arcu consequat et. Nullam mattis orci vel quam dignissim, et consequat ipsum condimentum. Integer eget sem sed magna dapibus hendrerit sed a mauris. Nam sollicitudin sem neque, ac sagittis dolor venenatis at.</p>
+      <div class="content" id="content_home">
+        <h3>Welcome To My Page</h3>
+        <br>
+        <p>Hello world!</p>
+        <br><br>
+        <h3>Coming Soon...</h3>
+        <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec libero metus. In sodales sapien ac lobortis pretium. Nunc tristique risus eu magna vehicula lobortis. Praesent eros ante, sagittis non finibus volutpat, consectetur ac elit. Nullam fermentum tempor velit, nec luctus ligula lobortis quis. Etiam cursus ultrices nisi. Sed et elit ac felis tincidunt congue a nec neque. Sed consequat at sem in pretium. Vivamus sem est, ornare vitae felis id, condimentum volutpat ligula. Aenean euismod ante varius risus iaculis condimentum.</p>
+        <br>
+        <p>Integer ac posuere elit, id mattis orci. Curabitur ligula nulla, bibendum ut augue id, tincidunt scelerisque est. Duis sit amet elit placerat, ornare mauris a, ullamcorper lorem. Donec bibendum sapien ultrices, mattis eros ac, pulvinar erat. Nulla vitae aliquam ex, in efficitur augue. Duis ultricies vestibulum orci, nec elementum erat tristique sed. Integer euismod ac tortor ac consectetur. Morbi a nulla semper, malesuada est quis, luctus est. Donec rhoncus porttitor pharetra. Cras tristique ligula non massa consectetur scelerisque.</p>
+        <br>
+        <p>Sed consequat faucibus tempus. Nulla id lacus risus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus est eros, ornare ac turpis ut, pharetra finibus lorem. Ut imperdiet massa lobortis tincidunt bibendum. Suspendisse interdum auctor egestas. Etiam feugiat faucibus ornare. Sed euismod lacinia mi eu convallis. Ut ut arcu sit amet arcu pretium porttitor.</p>
+        <br>
+        <p>Maecenas mi eros, finibus quis suscipit sit amet, efficitur eu ex. In eu iaculis magna. Mauris ac erat a lorem cursus volutpat vehicula vitae leo. Pellentesque ultricies, neque nec ultrices posuere, tellus magna interdum quam, eu feugiat ex purus eget nibh. Nulla vestibulum orci eget dui semper blandit. Donec in vulputate lacus. Fusce pellentesque, diam sed sodales aliquet, nunc enim tincidunt libero, eu gravida diam libero at lacus. Aenean eleifend, quam ut sodales sagittis, mi ex eleifend ante, nec ornare sapien augue at nisi. Aliquam erat volutpat. Suspendisse gravida tempor erat nec auctor. In nec sollicitudin quam. In hac habitasse platea dictumst. Donec sagittis suscipit diam at tincidunt.</p>
+        <br>
+        <p>Aliquam erat volutpat. Aenean mattis mauris id urna venenatis semper. Interdum et malesuada fames ac ante ipsum primis in faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula euismod ante, vitae congue arcu consequat et. Nullam mattis orci vel quam dignissim, et consequat ipsum condimentum. Integer eget sem sed magna dapibus hendrerit sed a mauris. Nam sollicitudin sem neque, ac sagittis dolor venenatis at.</p>
+      </div>
+      <div class="content" id="content_projects">
+        <h3>Projects</h3>
+        <p>Hello world!</p>
+      </div>
+      <div class="content" id="content_contact">
+        <h3>Contact Me</h3>
+        <p>Hello world!</p>
+      </div>
     </div>
     
+    <script>
+      changeContent('content_home');
+    </script>
   </body>
 </html>
