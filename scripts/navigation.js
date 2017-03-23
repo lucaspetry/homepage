@@ -1,12 +1,14 @@
-var currentContent = null;
+var mainDiv = null;
 
 function changeContent(newContentId) {
-  if(currentContent != null) {
-    currentContent.style.display = 'none';
-    currentContent.style.visibility = 'hidden';
-  }
+  mainDiv.style.opacity = 0;
   
-  currentContent = document.getElementById(newContentId);
-  currentContent.style.display = 'block';
-  currentContent.style.visibility = 'visible';
+  setTimeout(function() { 
+    mainDiv.innerHTML = document.getElementById(newContentId).innerHTML;
+    mainDiv.style.opacity = 1;
+  }, 400);
+}
+
+function init() {
+  mainDiv = document.getElementById('main');
 }

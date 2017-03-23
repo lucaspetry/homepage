@@ -39,7 +39,12 @@ p {
   padding-top: 3%;
   padding-bottom: 3%;
   position: relative;
+  transition: all 0.5s ease-in-out;
   width: 43%;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
 }
 
 #main h3 {
@@ -102,6 +107,4 @@ p {
 
 .content {
   display: none;
-  transition: all 0.5s ease-in-out;
-  visibility: hidden;
 }
