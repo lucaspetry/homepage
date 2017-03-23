@@ -47,8 +47,26 @@ p {
   -o-transition: all 0.5s ease-in-out;
 }
 
-#main h3 {
+h2, h3 {
   color: #525252;
+}
+
+.icon {
+  height: 30px;
+  margin-right: 5px;
+  width: 30px;
+}
+
+.cv_time {
+  font-weight: bold;
+  width: 120px;
+  padding-right: 15px;
+  text-align: right;
+  vertical-align: top;
+}
+
+.cv_description {
+  padding-bottom: 10px;
 }
 
 #profile_img {
@@ -78,9 +96,13 @@ p {
   height: 100%;
   margin: 0;
   padding-left: 15%;
-  padding-top: 5%;
+  padding-top: 4%;
   position: fixed;
   width: 25%;
+}
+
+#footer {
+  margin-top: 10%;
 }
 
 #navigation ul {
@@ -90,7 +112,12 @@ p {
   text-decoration: none;
 }
 
-#navigation ul a:link, a:visited, a:hover, a:active {
+#subtitle a:link, #subtitle a:visited, #subtitle a:hover, #subtitle a:active {
+  color: #525252;
+  text-decoration: none;  
+}
+
+a:link, a:visited, a:hover, a:active {
   color: #3399cc;
   text-decoration: none;
 }
