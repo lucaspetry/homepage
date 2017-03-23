@@ -59,7 +59,8 @@ h2, h3 {
 
 .cv_time {
   font-weight: bold;
-  width: 120px;
+  width: 140px;
+  padding-bottom: 10px;
   padding-right: 15px;
   text-align: right;
   vertical-align: top;
@@ -67,6 +68,8 @@ h2, h3 {
 
 .cv_description {
   padding-bottom: 10px;
+  text-align: left;
+  vertical-align: top;
 }
 
 #profile_img {
