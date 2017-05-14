@@ -31,113 +31,13 @@ p {
   line-height: 1.6;
 }
 
-#main {
-  font-size: 1.3rem;
-  height: 100%;
-  margin-left: 42%;
-  margin-right: 15%;
-  padding-top: 3%;
-  padding-bottom: 3%;
-  position: relative;
-  transition: all 0.5s ease-in-out;
-  width: 43%;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-}
-
-h2, h3 {
-  color: #525252;
-}
-
-.icon {
-  height: 30px;
-  margin-right: 5px;
-  width: 30px;
-}
-
-.cv_time {
-  font-weight: bold;
-  width: 140px;
-  padding-bottom: 10px;
-  padding-right: 15px;
-  text-align: right;
-  vertical-align: top;
-}
-
-.cv_description {
-  padding-bottom: 10px;
-  text-align: left;
-  vertical-align: top;
-}
-
-#profile_img {
-  border: 1px solid #FFFFFF;
-  border-radius: 10px;
-  height: 200px;
-  margin-bottom: 3%;
-  max-width: 100%;
-  object-fit: contain;
-  width: 200px;
-}
-
-#title {
-  color: #525252;
-  font-size: 3.0rem;
-  font-weight: bold;
-  margin-bottom: 3%;
-}
-
-#subtitle {
-  color: #525252;
-  font-size: 2.0rem;
-  margin-bottom: 12%;
-}
-
-#navigation {
-  height: 100%;
-  margin: 0;
-  padding-left: 15%;
-  padding-top: 4%;
-  position: fixed;
-  width: 25%;
-}
-
-#footer {
-  margin-top: 10%;
-}
-
-#navigation ul {
-  font-size: 1.5rem;
-  list-style-type: none;
-  padding: 0;
-  text-decoration: none;
-}
-
-#subtitle a:link, #subtitle a:visited, #subtitle a:hover, #subtitle a:active {
-  color: #525252;
-  text-decoration: none;  
-}
-
-a:link, a:visited, a:hover, a:active {
-  color: #3399cc;
-  text-decoration: none;
-}
-
-#navigation ul li a {
-  display: table;
-  height: 30px;
-}
-
-#navigation ul li a:hover {
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.project_members a:link, .project_members a:visited, .project_members a:hover, .project_members a:active {
-  color: #525252;
-  text-decoration: none;  
+#main-content {
+  margin: 0 10% 0 10%;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;  
 }
 
 .content {
