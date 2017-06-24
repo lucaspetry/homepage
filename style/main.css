@@ -32,7 +32,9 @@ p {
 }
 
 #main-content {
-  margin: 0 10% 0 10%;
+  font-size: 1.5rem;
+  height: 100%;
+  margin: 1% 10% 0 10%;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -42,4 +44,25 @@ p {
 
 .content {
   display: none;
+}
+
+.icon {
+  border: 0;
+  height: 30px;
+  margin-right: 5px;
+  width: 30px;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: #3399cc;
+  text-decoration: none;
+}
+
+#profile_img {
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+  height: 300px;
+  max-width: 100%;
+  object-fit: contain;
+  width: 300px;
 }
