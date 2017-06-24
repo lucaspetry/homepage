@@ -66,3 +66,18 @@ a:link, a:visited, a:hover, a:active {
   object-fit: contain;
   width: 300px;
 }
+
+.resume_time {
+  font-weight: bold;
+  width: 40%;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  text-align: right;
+  vertical-align: top;
+}
+
+.resume_description {
+  padding-bottom: 10px;
+  text-align: left;
+  vertical-align: top;
+}
