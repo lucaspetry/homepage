@@ -27,7 +27,7 @@ body {
   text-align: left;
 }
 
-p {
+p, li {
   line-height: 1.6;
 }
 
@@ -53,9 +53,13 @@ p {
   width: 30px;
 }
 
-a:link, a:visited, a:hover, a:active {
+a:link, a:visited, a:active {
   color: #3399cc;
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 #profile_img {

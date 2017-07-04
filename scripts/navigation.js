@@ -15,3 +15,7 @@ function changeContent(sender, content) {
     mainDiv.style.opacity = 1;
   }, 400);
 }
+
+function changeFileCV(file) {
+  document.getElementById("cv-viewer").data = file;
+}
