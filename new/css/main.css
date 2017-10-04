@@ -1,0 +1,15 @@
+#profile-img {
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+  height: 300px;
+  max-width: 100%;
+  object-fit: contain;
+  width: 300px;
+}
+
+.icon {
+  border: 0;
+  height: 30px;
+  margin-right: 5px;
+  width: 30px;
+}
