@@ -32,14 +32,14 @@
     </style>
     
     <!-- Google Analytics -->
-    <script>
+  <!--   <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
       ga('create', 'UA-96086692-1', 'auto');
       ga('send', 'pageview');
-    </script>
+    </script> -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   </head>
@@ -52,7 +52,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span> 
           </button>
-          <a class="navbar-brand" href="#">LUCAS MAY PETRY</a>
+          <a class="navbar-brand" href="">LUCAS MAY PETRY</a>
         </div>
         <div class="collapse navbar-collapse" id="menu">
           <ul class="nav navbar-nav navbar-right">
@@ -75,18 +75,18 @@
           <div class="col-lg-7" style="text-align: left">
             <h2>ABOUT</h2>
             <br>
-            <p>I'm a Computer Science student at the <a href="http://ufsc.br" target="_blank">Federal University of Santa Catarina, Brazil</a> (UFSC), graduating in December 2017. I studied abroad at <a href="http://ucdavis.edu" target="_blank">University of California, Davis</a> (UC Davis) from 2015 to 2016.</p>
+            <p>I'm a Computer Science undergraduate student at the <a href="http://ufsc.br" target="_blank">Federal University of Santa Catarina</a> (UFSC), Brazil, graduating in December 2017. I studied abroad at <a href="http://ucdavis.edu" target="_blank">University of California, Davis</a> (UC Davis) from 2015 to 2016.</p>
             <p>While studying abroad I started learning about <a href="https://datascience.berkeley.edu/about/what-is-data-science/" target="_blank">data science</a>, which has caught my interest since then. Within the data science field, I'm interested in <a href="https://www.coursera.org/specializations/data-mining" target="_blank">data mining</a>, <a href="https://www.coursera.org/learn/machine-learning" target="_blank">machine learning</a> and <a href="https://www.coursera.org/learn/datavisualization" target="_blank">data visualization</a>.</p>
             <br>
             <p>Some interesting classes I took:<br>
               <ul style="margin-left: 25px;">
-                <li><a href="https://planos.inf.ufsc.br/modulos/planos/visualizar.php?id=2502">INE5644 Data Mining</a>, UFSC</li>
-                <li><a href="https://planos.inf.ufsc.br/modulos/planos/visualizar.php?id=2307">INE5426 Compilers Construction</a>, UFSC</li>
-                <li><a href="https://planos.inf.ufsc.br/modulos/planos/visualizar.php?id=1935">INE5421 Formal Languages and Compilers</a>, UFSC</li>
-                <li><a href="http://www.cs.ucdavis.edu/blog/ecs-170-artificial-intelligence/">ECS 170 Artificial Intelligence</a>, UC Davis</li>
-                <li><a href="http://www.cs.ucdavis.edu/blog/ecs-163-information-interfaces/">ECS 163 Information Interfaces</a>, UC Davis</li>
-                <li><a href="http://www.cs.ucdavis.edu/blog/ecs-127-cryptography/">ECS 127 Cryptography</a>, UC Davis</li>
-                <li><a href="http://www.cs.ucdavis.edu/blog/ecs-60-data-structures-programming/">ECS 060 Data Structures and Programming</a>, UC Davis</li>
+                <li><a href="https://planos.inf.ufsc.br/modulos/planos/visualizar.php?id=2502" target="_blank">INE5644 Data Mining</a>, UFSC</li>
+                <li><a href="https://planos.inf.ufsc.br/modulos/planos/visualizar.php?id=2307" target="_blank">INE5426 Compilers Construction</a>, UFSC</li>
+                <li><a href="https://planos.inf.ufsc.br/modulos/planos/visualizar.php?id=1935" target="_blank">INE5421 Formal Languages and Compilers</a>, UFSC</li>
+                <li><a href="http://www.cs.ucdavis.edu/blog/ecs-170-artificial-intelligence/" target="_blank">ECS 170 Artificial Intelligence</a>, UC Davis</li>
+                <li><a href="http://www.cs.ucdavis.edu/blog/ecs-163-information-interfaces/" target="_blank">ECS 163 Information Interfaces</a>, UC Davis</li>
+                <li><a href="http://www.cs.ucdavis.edu/blog/ecs-127-cryptography/" target="_blank">ECS 127 Cryptography</a>, UC Davis</li>
+                <li><a href="http://www.cs.ucdavis.edu/blog/ecs-60-data-structures-programming/" target="_blank">ECS 060 Data Structures and Programming</a>, UC Davis</li>
               </ul>
             </p>
             <br>
@@ -182,7 +182,7 @@
           <div class="col-lg-7" style="text-align: left">
             <h2>RESEARCH</h2>
             <br>
-            <p>I'm currently doing some research on data mining, working under the supervision of professor <a href="http://inf.ufsc.br/~vania" target="_blank">Dr. Vania Bogorny</a>. Our research is on semantic trajectories of moving objects. More information will be disclosed soon!</p>
+            <p>I'm currently doing some research on data mining, working under the supervision of Professor <a href="http://inf.ufsc.br/~vania" target="_blank">Vania Bogorny</a>. Our research is on multiple-aspect trajectories of moving objects. More information will be disclosed soon.</p>
             <p>
               <b>Bibliography:</b>
               <br>
@@ -215,13 +215,19 @@
     <script>
       $(document).ready(function(){
         $(".navbar a, footer a[href='#home']").on('click', function(event) {
-        if (this.hash !== "") {
-          event.preventDefault();
-          var hash = this.hash;
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top - $('#navbar').height()
-          }, 500, function(){
-            window.location.hash = hash;
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top - $('#navbar').height()
+            }, 500, function(){
+              if(history.pushState) {
+                history.pushState(null, null, hash);
+              }
+              else {
+                location.hash = hash;
+              }
             });
           } // End if
         });
