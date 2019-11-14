@@ -44,6 +44,14 @@
       ga('create', 'UA-96086692-1', 'auto');
       ga('send', 'pageview');
     </script>
+    <script type="text/javascript" src="./js/bibtex_js.js"></script>
+
+    <bibtex src="./resources/bibtex/petry2019muitas.bib"></bibtex>
+    <bibtex src="./resources/bibtex/silva2019mining.bib"></bibtex>
+    <bibtex src="./resources/bibtex/silva2019asurvey.bib"></bibtex>
+    <bibtex src="./resources/bibtex/ferrero2019discovering.bib"></bibtex>
+    <bibtex src="./resources/bibtex/petry2019unsupervised.bib"></bibtex>
+    <bibtex src="./resources/bibtex/esuli2018traj2user.bib"></bibtex>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   </head>
@@ -198,32 +206,34 @@
       </div>
 
       <div id="research" class="page-content container-fluid text-center">
-        <div class="row">
-          <div class="col-lg-5">
-            <br><br>
-            <img width="200px" height="200px" src="images/research.png">
+        <div class="row" style="text-align: left">
+          <h2 style="text-align: center">RESEARCH</h2>
+          <br>
+          <p>I'm currently doing research on trajectory data mining, working under the supervision of Professor <a href="http://inf.ufsc.br/~vania" target="_blank">Vania Bogorny</a>. My focus is on similarity measuring and classification of multiple-aspect trajectories of moving objects.</p>
+          <br />
+          <div class="bibtex_template">
+            <li>
+            <span class="author"></span>
+            (<span class="year"></span>).
+            <b><span class="title"></span>.</b>
+            <span class="if journal || booktitle"><span class="journal || booktitle"></span><span class="if volume">, <span class="volume"></span></span><span class="if pages">, <span class="pages"></span></span>.</span>
+            <span class="if url">[ <a class="bibtexVar" extra="url" href="+url+" target="_blank">publication</a> ]</span>
+            <span class="if preprint">[ <a class="bibtexVar" extra="preprint" href="+preprint+" target="_blank">preprint</a> ]</span>
+            </li>
           </div>
-          <div class="col-lg-7" style="text-align: left">
-            <h2>RESEARCH</h2>
-            <br>
-            <p>I'm currently doing research on trajectory data mining, working under the supervision of Professor <a href="http://inf.ufsc.br/~vania" target="_blank">Vania Bogorny</a>. My focus is on similarity measuring and classification of multiple-aspect trajectories of moving objects.</p>
-            <br />
-            <p>
-              <h4>2019</h4>
-              <ul>
-                <li><b>Petry, L. M.</b>, Soares, A., Bogorny, V., & Matwin, S. (2019). <a href="https://arxiv.org/pdf/1908.05103" target="_blank">Unsupervised Behavior Change Detection in Multidimensional Data Streams for Maritime Traffic Monitoring.</a> arXiv preprint arXiv:1908.05103.</li>
-
-                <li><b>Petry, L. M.</b>, Ferrero, C. A., Alvares, L. O., Renso, C., & Bogorny, V. (2019). <a href="resources/2019-04-05_TGIS_MUITAS_Preprint.pdf" target="_blank">Towards Semantic-Aware Multiple-Aspect Trajectory Similarity Measuring.</a> Transactions in GIS, 23(5), 960– 975.</li>
-              </ul>
-            </p>
-            <p>
-              <h4>2018</h4>
-              <ul>
-                <li>Esuli, A., <b>Petry, L. M.</b>, Renso, C., & Bogorny, V. (2018). <a href="https://arxiv.org/pdf/1808.00554" target="_blank">Traj2User: exploiting embeddings for computing similarity of users mobile behavior</a>. arXiv preprint arXiv:1808.00554.</li>
-              </ul>
-            </p>
-            <br />
+          <div id="bibtex_display">
+            <div class="bibtex_structure">
+              <div class="group year" extra="DESC number">
+                <p>
+                  <h4 class="title"></h4>
+                  <ul>
+                    <div class="templates"></div></div>
+                  </ul>
+                </p>
+              </div>
+            </div>
           </div>
+          <br />
         </div>
       </div>
     </div>
@@ -233,7 +243,7 @@
         <span class="glyphicon glyphicon-chevron-up"></span>
       </a>
       <br><br>
-      Copyright © 2017-2019 Lucas May Petry. | Last updated: October 30, 2019. | Icons by <a href="https://www.shareicon.net/author/ual-pharm" target="_blank">ual Pharm</a>, <a href="https://www.iconfinder.com/rebininfotech" target="_blank">Rebin Infotech</a> / <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a> and <a href="https://www.flaticon.com/authors/smashicons">Smashicons</a> from www.flaticon.com.<br><br>
+      Copyright © 2017-2019 Lucas May Petry. | Last updated: November 13, 2019. | Icons by <a href="https://www.shareicon.net/author/ual-pharm" target="_blank">ual Pharm</a>, <a href="https://www.iconfinder.com/rebininfotech" target="_blank">Rebin Infotech</a> / <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>, <a href="https://www.flaticon.com/authors/smashicons">Smashicons</a> from www.flaticon.com, and Bibtex parser by <a href="https://github.com/pcooksey/bibtex-js">pcooksey</a> / MIT.<br><br>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
