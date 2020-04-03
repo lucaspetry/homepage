@@ -55,7 +55,9 @@
     <bibtex src="./resources/bibtex/silva2019asurvey.bib"></bibtex>
     <bibtex src="./resources/bibtex/ferrero2019discovering.bib"></bibtex>
     <bibtex src="./resources/bibtex/petry2019unsupervised.bib"></bibtex>
-    <bibtex src="./resources/bibtex/esuli2018traj2user.bib"></bibtex>
+    <script type="text/javascript">
+      document.getElementsByTagName("head")[0].innerHTML += '<bibtex src="./resources/bibtex/esuli2018traj2user.bib"></bibtex>';
+    </script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   </head>
@@ -212,21 +214,23 @@
           <br /> -->
           <div class="bibtex_template">
             <li>
-            <span class="author"></span>
-            (<span class="year"></span>).
-            <b><span class="title"></span>.</b>
-            <span class="if journal || booktitle"><span class="journal || booktitle"></span><span class="if volume">, <span class="volume"></span></span><span class="if pages">, <span class="pages"></span></span>.</span>
+<!-- ${authors}.<br><b>${title}</b>.<br><i>${vehicle}${pages != '' ? ', ' + pages : ''}</i> (<b>${year}</b>).<br> -->
+
+            <span class="author"></span>.<br>
+            <b><span class="title"></span></b>.<br>
+            <i><span class="if journal || booktitle"><span class="journal || booktitle"></span><span class="if volume">, <span class="volume"></span></span><span class="if pages">, <span class="pages"></span></span></span> (<span class="year"></span>)</i>.<br>
             <span class="if url">[ <a class="bibtexVar" extra="url" href="+url+" target="_blank">publication</a> ]</span>
             <span class="if preprint">[ <a class="bibtexVar" extra="preprint" href="+preprint+" target="_blank">preprint</a> ]</span>
+            <span class="if code">[ <a class="bibtexVar" extra="code" href="+code+" target="_blank">source code</a> ]</span>
             </li>
           </div>
           <div id="bibtex_display">
             <div class="bibtex_structure">
-              <div class="group year" extra="DESC number">
+              <div class="group year" extra="DESC number" style="margin-bottom: 50px">
                 <p>
-                  <h4 class="title"></h4>
-                  <ul>
-                    <div class="templates"></div></div>
+                  <h4 class="title"></h4><hr>
+                  <ul class="publications">
+                    <div class="templates"></div>
                   </ul>
                 </p>
               </div>
@@ -242,7 +246,7 @@
         <span class="glyphicon glyphicon-chevron-up"></span>
       </a>
       <br><br>
-      Copyright © 2017-2019 Lucas May Petry. | Last updated: March 5, 2020. | Icons by <a href="https://www.shareicon.net/author/ual-pharm" target="_blank">ual Pharm</a>, <a href="https://www.iconfinder.com/rebininfotech" target="_blank">Rebin Infotech</a> / <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>, <a href="https://www.flaticon.com/authors/smashicons">Smashicons</a> from www.flaticon.com, and Bibtex parser by <a href="https://github.com/pcooksey/bibtex-js">pcooksey</a> / MIT.<br><br>
+      Copyright © 2017-2019 Lucas May Petry. | Last updated: April 3, 2020. | Icons by <a href="https://www.shareicon.net/author/ual-pharm" target="_blank">ual Pharm</a>, <a href="https://www.iconfinder.com/rebininfotech" target="_blank">Rebin Infotech</a> / <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>, <a href="https://www.flaticon.com/authors/smashicons">Smashicons</a> from www.flaticon.com, and Bibtex parser by <a href="https://github.com/pcooksey/bibtex-js">pcooksey</a> / MIT.<br><br>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

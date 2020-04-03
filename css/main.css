@@ -13,3 +13,7 @@
   margin-right: 5px;
   width: 30px;
 }
+
+.publications {
+    list-style-image: url('../images/icon-file-text.svg');
+}
