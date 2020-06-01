@@ -1,58 +1,109 @@
-<!DOCTYPE HTML>
-<html lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt">
   <head>
-    <meta charset="UTF-8" >
-    <meta name="description" content="Lucas May Petry">
-    <meta name="author" content="Lucas May Petry">
+    <meta charset="utf-8">
     <title>Lucas May Petry</title>
-    <link rel="stylesheet" type="text/css" href="style/main.css">
-    <link rel="stylesheet" type="text/css" href="style/menu.css">
-    <script src="scripts/navigation.js"></script>
-    <script src="scripts/doodle.js"></script>
+    <link rel="icon" href="icon.png">
+    <meta name="description" content="Home page">
+    <meta name="author" content="Lucas May Petry">
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
+
+    <style>
+      .navbar {
+        margin-bottom: 0;
+        background-color: #FFFFFF;
+        z-index: 9999;
+        border: 0;
+        font-size: 12px !important;
+        line-height: 1.42857143 !important;
+        letter-spacing: 4px;
+        border-radius: 0;
+        border-bottom: 1px solid #EEEEEE;
+      }
+      .navbar li a, .navbar .navbar-brand {
+          color: #000000 !important;
+      }
+      .navbar-nav li a:hover, .navbar-nav li.active a {
+          color: #06214c !important;
+          background-color: #EEEEEE !important;
+      }
+      .navbar-default .navbar-toggle {
+          border-color: transparent;
+          color: #fff !important;
+      }
+    </style>
+    
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-96086692-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script type="text/javascript" src="./js/bibtex_js.js"></script>
+
+    <bibtex src="./resources/bibtex/petry2020marc.bib"></bibtex>
+    <bibtex src="./resources/bibtex/petry2020challenges.bib"></bibtex>
+    <bibtex src="./resources/bibtex/vicenzi2020exploring.bib"></bibtex>
+    <bibtex src="./resources/bibtex/ferrero2020master.bib"></bibtex>
+    <bibtex src="./resources/bibtex/petry2019muitas.bib"></bibtex>
+    <bibtex src="./resources/bibtex/silva2019mining.bib"></bibtex>
+    <bibtex src="./resources/bibtex/silva2019asurvey.bib"></bibtex>
+    <bibtex src="./resources/bibtex/ferrero2019discovering.bib"></bibtex>
+    <bibtex src="./resources/bibtex/petry2019unsupervised.bib"></bibtex>
+    <script type="text/javascript">
+      document.getElementsByTagName("head")[0].innerHTML += '<bibtex src="./resources/bibtex/esuli2018traj2user.bib"></bibtex>';
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   </head>
-  <body>
-    <div id="header">
-      <div id="logo">
-        LUCAS MAY PETRY
+  <body id="home" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <nav id="navbar" class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span> 
+          </button>
+          <a class="navbar-brand" href="">LUCAS MAY PETRY</a>
+        </div>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#research">RESEARCH</a></li>
+          </ul>
+        </div>
       </div>
-      <div id="menu">
-        <ul>
-          <li class="menu-selected" onclick="changeContent(this, 'about')">About</li>
-          <li onclick="changeContent(this, 'projects')">Projects</li>
-          <li onclick="changeContent(this, 'resume')">Resume</li>
-          <li onclick="goToLuckyUrl()">I'm Feeling Lucky</li>
-        </ul>
-      </div>
-    </div>
-    <div id="main-content">
-    </div>
-    <div class="content" id="about">
-      <table border="0" style="width: 100%">
-        <tr>
-          <td style="width: 40%; text-align: center;"><img id="profile_img" src="images/profile.jpg"></td>
-          <td>
-            <p>Hi there!</p>
-            <br>
-            <p>I'm a Computer Science student at the <a href="http://ufsc.br" target="_blank">Federal University of Santa Catarina, Brazil</a> (UFSC), graduating in December 2017. Since my first day in college, studying abroad at <a href="http://ucdavis.edu" target="_blank">University of California, Davis</a> (UC Davis) was one of my best experiences.</p>
-            <p>While studying abroad I got to know about <a href="https://datascience.berkeley.edu/about/what-is-data-science/" target="_blank">data science</a>, which has caught my interest since then. Within the data science field, I'm interested in <a href="https://www.coursera.org/specializations/data-mining" target="_blank">data mining</a>, <a href="https://www.coursera.org/learn/machine-learning" target="_blank">machine learning</a> and <a href="https://www.coursera.org/learn/datavisualization" target="_blank">data visualization</a>.</p>
-            <br>
-            <p>Some interesting classes I took:<br>
-              <ul style="margin-left: 25px;">
-                <li><a href="https://planos.inf.ufsc.br/modulos/planos/visualizar.php?id=2502">INE5644 Data Mining</a>, UFSC</li>
-                <li><a href="https://planos.inf.ufsc.br/modulos/planos/visualizar.php?id=2307">INE5426 Compilers Construction</a>, UFSC</li>
-                <li><a href="https://planos.inf.ufsc.br/modulos/planos/visualizar.php?id=1935">INE5421 Formal Languages and Compilers</a>, UFSC</li>
-                <li><a href="http://www.cs.ucdavis.edu/blog/ecs-170-artificial-intelligence/">ECS 170 Artificial Intelligence</a>, UC Davis</li>
-                <li><a href="http://www.cs.ucdavis.edu/blog/ecs-163-information-interfaces/">ECS 163 Information Interfaces</a>, UC Davis</li>
-                <li><a href="http://www.cs.ucdavis.edu/blog/ecs-127-cryptography/">ECS 127 Cryptography</a>, UC Davis</li>
-              </ul>
-            </p>
+    </nav>
+
+    <div id="content" class="container">
+      <div id="about" class="page-content container-fluid text-center">
+        <!-- Intro Content -->
+        <div class="row">
+          <div class="col-lg-5">
             <br><br>
-            <h3>Reach Out To Me</h3>
+            <img id="profile-img" src="images/profile.jpg">
+          </div>
+          <div class="col-lg-7" style="text-align: left">
+            <h2>ABOUT</h2>
+            <br>
+	    <p>I'm a graduate student at <a href="http://ufsc.br" target="_blank">Federal University of Santa Catarina</a> (UFSC) in Florianópolis, Brazil, pursuing a master's degree in Computer Science (expected mar/2020). During my program I visited <a href="http://dal.ca/" target="_blank">Dalhousie University</a> in Halifax, Canada, as a research assistant at the Institute for Big Data Analytics, from Jan. 2019 to Jan. 2020.</p>
+      <p>I earned my B.S. in Computer Science from UFSC in 2018 (you can check out the thesis I wrote by following <a href="resources/2017-12-04_Undergrad_Thesis.pdf" target="_blank">this link</a>) and also studied abroad at <a href="http://ucdavis.edu" target="_blank">University of California</a> in Davis, USA, from 2015 to 2016.</p>
+
+      <p>My career and research interests span from classical machine learning techniques to deep learning, especially in Natural Language Processing (NLP) and Geographical Information Science (GIS). I love to collaborate and help other people, and I want to be always learning!</p>
+            <br>
+            <h3>Reach out to me</h3>
             <br>
             <table border="0">
               <tr>
                 <td><img class="icon" src="images/icon-email.png"></td>
-                <td><a href="mailto:lucas.petry@grad.ufsc.br">lucas.petry@grad.ufsc.br</a></td>
+                <td>lucas [dot] petry [at] posgrad.ufsc.br</td>
               </tr>
               <tr>
                 <td><img class="icon" src="images/icon-linkedin.png"></td>
@@ -62,51 +113,175 @@
                 <td><img class="icon" src="images/icon-github.png"></td>
                 <td><a href="https://github.com/lucaspetry" target="_blank">lucaspetry</a></td>
               </tr>
+              <tr>
+                <td><img class="icon" src="images/icon-google-scholar.svg"></td>
+                <td><a href="https://scholar.google.com/citations?user=nKGT_csAAAAJ" target="_blank">Scholar Profile</a></td>
+              </tr>
             </table>
-          </td>
-        </tr>
-      </table>
+          </div>
+        </div>
+      </div>
+
+      <div id="projects" class="page-content container-fluid text-center">
+        <h2>PROJECTS</h2>
+        <br>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="panel panel-default" data-mh="projects-row-1">
+              <div class="panel-heading"><a href="https://github.com/lucaspetry/trickling-wsn" target="_blank">Predictors for Trickling in WSN</a></div>
+              <div class="panel-body">
+                <p>
+                  <a href="https://github.com/lucaspetry" target="_blank">@lucaspetry</a>, 
+                  <a href="https://github.com/doodomartins" target="_blank">@doodomartins</a>, 
+                  <a href="https://github.com/maikeps" target="_blank">@maikeps</a>
+                </p>
+                <p>Predictors on embedded systems for trickling in Wireless Sensor Networks (WSN). The objective was to decrease the number of messages exchanged by devices in an IoT environment without losing important information. The project was developed in C++ during the Operating Systems II class at UFSC.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="panel panel-default" data-mh="projects-row-1">
+              <div class="panel-heading"><a href="https://github.com/lucaspetry/toc-compiler" target="_blank">TOC Compiler</a></div>
+              <div class="panel-body">
+                <p>
+                  <a href="https://github.com/lucaspetry" target="_blank">@lucaspetry</a>, 
+                  <a href="https://github.com/lucasmpalma" target="_blank">@lucasmpalma</a>, 
+                  <a href="https://github.com/luizurias1" target="_blank">@luizurias1</a>
+                </p>
+                <p>A new programming language and its compiler, designed during the course of Compilers Construction. The language pillars are simplicity, organization and quickness. For the project we used Bison, Flex and C++.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="panel panel-default" data-mh="projects-row-1">
+              <div class="panel-heading"><a href="https://lucaspetry.github.io/smail-simulator/" target="_blank">Smail Simulator (Portuguese)</a></div>
+              <div class="panel-body">
+                <p>
+                  <a href="https://github.com/lucaspetry" target="_blank">@lucaspetry</a>, 
+                  <a href="https://github.com/nathanmolinari" target="_blank">@nathanmolinari</a>
+                </p>
+                <p>A simulator of traffic to and from e-mail servers, developed using Javascript, HTML, CSS and the <a href="https://d3js.org/" target="_blank">D3 library</a>. It is able to simulate e-mail traffic under different settings of servers and traffic distribution.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="panel panel-default" data-mh="projects-row-2">
+              <div class="panel-heading"><a href="https://github.com/lucaspetry/NBADatasetVisualization" target="_blank">NBA 2014-15 Dataset Visualization</a></div>
+              <div class="panel-body">
+                <p>
+                  <a href="https://github.com/lucaspetry" target="_blank">@lucaspetry</a>
+                </p>
+                <p>An interactive visualization of NBA movement data using Processing. The project was developed during the course of Information Interfaces I took at UC Davis. It's possible to visualize play-by-play data, as well as the players and ball movement throughout a match.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="panel panel-default" data-mh="projects-row-2">
+              <div class="panel-heading"><a href="https://github.com/lucaspetry/trajectory-similarity" target="_blank">Trajectory Similarity Library</a></div>
+              <div class="panel-body">
+                <p>
+                  <a href="https://github.com/lucaspetry" target="_blank">@lucaspetry</a>
+                </p>
+                <p>A small library for trajectory similarity measuring in Java. Similarity measures were implemented based on the scientific papers that first introduced them.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="panel panel-default" data-mh="projects-row-2">
+              <div class="panel-heading"><a href="https://trajminer.github.io/" target="_blank">Trajminer</a></div>
+              <div class="panel-body">
+                <p>
+                  <a href="https://github.com/lucaspetry" target="_blank">@lucaspetry</a>
+                </p>
+                <p>Trajectory mining library for Python, currently under development. Trajminer aims to fill the gap of solid open-source libraries for trajectory data mining. It contains methods for data loading, preprocessing, similarity measuring, clustering and classification.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <p>For more projects, <a href="https://github.com/lucaspetry" target="_blank">view my GitHub profile</a>.</p>
+        <br>
+      </div>
+
+      <div id="research" class="page-content container-fluid text-center">
+        <div class="row" style="text-align: left">
+          <h2 style="text-align: center">RESEARCH</h2>
+          <br>
+          <!-- <p>I'm currently doing research on spatio-temporal data mining, working under the supervision of Professor <a href="http://inf.ufsc.br/~vania" target="_blank">Vania Bogorny</a>. My focus is on classification of multiple-aspect trajectories of moving objects.</p>
+          <br /> -->
+          <div class="bibtex_template">
+            <li>
+<!-- ${authors}.<br><b>${title}</b>.<br><i>${vehicle}${pages != '' ? ', ' + pages : ''}</i> (<b>${year}</b>).<br> -->
+
+            <span class="author"></span>.<br>
+            <b><span class="title"></span></b>.<br>
+            <i><span class="if journal || booktitle"><span class="journal || booktitle"></span><span class="if volume">, <span class="volume"></span></span><span class="if pages">, <span class="pages"></span></span></span> (<span class="year"></span>)</i>.<br>
+            <span class="if url">[ <a class="bibtexVar" extra="url" href="+url+" target="_blank">publication</a> ]</span>
+            <span class="if preprint">[ <a class="bibtexVar" extra="preprint" href="+preprint+" target="_blank">preprint</a> ]</span>
+            <span class="if code">[ <a class="bibtexVar" extra="code" href="+code+" target="_blank">source code</a> ]</span>
+            </li>
+          </div>
+          <div id="bibtex_display">
+            <div class="bibtex_structure">
+              <div class="group year" extra="DESC number" style="margin-bottom: 50px">
+                <p>
+                  <h4 class="title"></h4><hr>
+                  <ul class="publications">
+                    <div class="templates"></div>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+          <br />
+        </div>
+      </div>
     </div>
-    <div class="content" id="projects">
-      <h3><a href="https://github.com/lucaspetry/trickling-wsn" target="_blank">Predictors for Trickling in WSN</a></h3>
-      <p class="project_members">
-        <a href="https://github.com/lucaspetry" target="_blank">@lucaspetry</a>, 
-        <a href="https://github.com/doodomartins" target="_blank">@doodomartins</a>, 
-        <a href="https://github.com/maikeps" target="_blank">@maikeps</a>
-      </p>
-      <p>Predictors on embedded systems for trickling in Wireless Sensor Networks (WSN). The objective was to decrease the number of messages exchanged by devices in an IoT environment, for instance, without losing important information. The project was developed during the Operating Systems II class, at UFSC.</p>
-      <br>
-      <h3><a href="https://github.com/lucaspetry/toc-compiler" target="_blank">TOC Compiler</a></h3>
-      <p class="project_members">
-        <a href="https://github.com/lucaspetry" target="_blank">@lucaspetry</a>, 
-        <a href="https://github.com/lucasmpalma" target="_blank">@lucasmpalma</a>, 
-        <a href="https://github.com/luizurias1" target="_blank">@luizurias1</a>
-      </p>
-      <p>A new programming language and its compiler, designed during the course of Compilers Construction. The language pillars are simplicity, organization and quickness. For the project we used Bison, Flex and C++.</p>
-      <br>
-      <h3><a href="https://lucaspetry.github.io/smail-simulator/" target="_blank">Smail Simulator (Portuguese)</a></h3>
-      <p class="project_members">
-        <a href="https://github.com/lucaspetry" target="_blank">@lucaspetry</a>, 
-        <a href="https://github.com/nathanmolinari" target="_blank">@nathanmolinari</a>
-      </p>
-      <p>A simulator of traffic to and from mail servers, developed using Javascript, HTML, CSS and the <a href="https://d3js.org/" target="_blank">D3 library</a>. Simulate mail traffic through different settings of servers and traffic distribution.</p>
-      <br>
-      <h3><a href="https://github.com/lucaspetry/NBADatasetVisualization" target="_blank">NBA 2014-15 Dataset Visualization</a></h3>
-      <p class="project_members">
-        <a href="https://github.com/lucaspetry" target="_blank">@lucaspetry</a>
-      </p>
-      <p>An interactive visualization of NBA movement data using processing. The project was developed during the course of Information Interfaces I took at UC Davis. It's possible to visualize play-by-play data, as well as the players and ball movements during an event.</p>
-      <br><br><br>
-      <p>For more projects, <a href="https://github.com/lucaspetry" target="_blank">View My GitHub Profile</a>.</p>
-    </div>
-    <div class="content" id="resume">
-      <span style="margin-left: 75%;"><a href="#" onclick="changeFileCV('files/cv_english.pdf')">English</a><a href="#" onclick="changeFileCV('files/cv_portuguese.pdf')" style="margin-left: 20px;">Portuguese</a><a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4477684E2" target="_blank" style="margin-left: 20px;">Lattes CV</a></span>
-      <object id="cv-viewer" data="files/cv_english.pdf" type="application/pdf" width="100%" height="500px" style="margin-top: 20px">
-      </object>
-    </div>
+
+    <footer class="container-fluid text-center">
+      <a href="#home" title="To Top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+      </a>
+      <br><br>
+      Copyright © 2017-2019 Lucas May Petry. | Last updated: April 3, 2020. | Icons by <a href="https://www.shareicon.net/author/ual-pharm" target="_blank">ual Pharm</a>, <a href="https://www.iconfinder.com/rebininfotech" target="_blank">Rebin Infotech</a> / <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>, <a href="https://www.flaticon.com/authors/smashicons">Smashicons</a> from www.flaticon.com, and Bibtex parser by <a href="https://github.com/pcooksey/bibtex-js">pcooksey</a> / MIT.<br><br>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./js/jquery.matchHeight.js" type="text/javascript"></script>
+    <script src="./js/bootstrap.min.js"></script>
     <script>
-      init();
-      changeContent(document.getElementsByClassName("menu-selected")[0], "about");
+      $(document).ready(function(){
+        $(".navbar a, footer a[href='#home']").on('click', function(event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top - $('#navbar').height()
+            }, 500, function(){
+              if(history.pushState) {
+                history.pushState(null, null, hash);
+              }
+              else {
+                location.hash = hash;
+              }
+            });
+          } // End if
+        });
+
+        $("#content").css("margin-top", $('#navbar').height());
+        $(".page-content").css("min-height", $(window).height() - $('#navbar').height());
+      });
+
+      $(window).resize(function() {
+        $("#content").css("margin-top", $('#navbar').height());
+        $(".page-content").css("min-height", $(window).height() - $('#navbar').height());
+
+        $('.col-md-4').matchHeight({byRow: true});
+      });
     </script>
   </body>
 </html>
