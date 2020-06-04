@@ -1,28 +1,32 @@
 {
   "files": {
-    "main.css": "/static/css/main.79586428.chunk.css",
-    "main.js": "/static/js/main.fd3d93ce.chunk.js",
-    "main.js.map": "/static/js/main.fd3d93ce.chunk.js.map",
+    "main.css": "/static/css/main.7c742a48.chunk.css",
+    "main.js": "/static/js/main.bf8ecd18.chunk.js",
+    "main.js.map": "/static/js/main.bf8ecd18.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.661514ca.js",
     "runtime-main.js.map": "/static/js/runtime-main.661514ca.js.map",
     "static/css/2.af3c1da9.chunk.css": "/static/css/2.af3c1da9.chunk.css",
-    "static/js/2.b16322ae.chunk.js": "/static/js/2.b16322ae.chunk.js",
-    "static/js/2.b16322ae.chunk.js.map": "/static/js/2.b16322ae.chunk.js.map",
+    "static/js/2.adaeb142.chunk.js": "/static/js/2.adaeb142.chunk.js",
+    "static/js/2.adaeb142.chunk.js.map": "/static/js/2.adaeb142.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.880aff1e4b698cdfaecb1d67278940b9.js": "/precache-manifest.880aff1e4b698cdfaecb1d67278940b9.js",
+    "precache-manifest.8c9e099301f7996af12610851b5005f7.js": "/precache-manifest.8c9e099301f7996af12610851b5005f7.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.79586428.chunk.css.map": "/static/css/main.79586428.chunk.css.map",
-    "static/js/2.b16322ae.chunk.js.LICENSE.txt": "/static/js/2.b16322ae.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/static/media/icon-file-text.09f0201e.svg",
+    "static/css/main.7c742a48.chunk.css.map": "/static/css/main.7c742a48.chunk.css.map",
+    "static/js/2.adaeb142.chunk.js.LICENSE.txt": "/static/js/2.adaeb142.chunk.js.LICENSE.txt",
+    "static/media/styles.css": "/static/media/icon-file-text.09f0201e.svg",
+    "static/media/mining_journals.png": "/static/media/mining_journals.d998eb37.png",
+    "static/media/nba_visualization.gif": "/static/media/nba_visualization.197271a4.gif",
     "static/media/profile.jpg": "/static/media/profile.d6c7705a.jpg",
-    "static/media/publications.tsv": "/static/media/publications.b6ed93d6.tsv"
+    "static/media/publications.tsv": "/static/media/publications.b6ed93d6.tsv",
+    "static/media/smail_simulator.jpeg": "/static/media/smail_simulator.a5e42f43.jpeg",
+    "static/media/trickling_wsn.png": "/static/media/trickling_wsn.68fa0da2.png"
   },
   "entrypoints": [
     "static/js/runtime-main.661514ca.js",
     "static/css/2.af3c1da9.chunk.css",
-    "static/js/2.b16322ae.chunk.js",
-    "static/css/main.79586428.chunk.css",
-    "static/js/main.fd3d93ce.chunk.js"
+    "static/js/2.adaeb142.chunk.js",
+    "static/css/main.7c742a48.chunk.css",
+    "static/js/main.bf8ecd18.chunk.js"
   ]
 }
