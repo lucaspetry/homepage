@@ -1,0 +1,33 @@
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Where the magic happens */
+    /* grid-auto-rows: 275px; */
+    grid-gap: 20px;
+}
+
+.projects-item {
+    background: #fff;
+    /* border-radius: 8px; */
+    border: 1px solid rgb(227, 230, 240);
+    box-shadow: 0 .15rem 1rem 0 rgba(58,59,69,.15)!important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    /* height: 300px; */
+    /* width: 400px; */
+}
+
+.project-content {
+    margin: 10px 0 10px 0;
+}
+
+.project-thumb {
+    float: left;
+    max-width: 150px;
+    margin-right: 10px;
+}
+
+.project-skill {
+    margin-right: 10px;
+}

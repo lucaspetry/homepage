@@ -1,0 +1,8 @@
+.papers {
+    padding-left: 20px;
+    list-style-image: url('../../assets/icon-file-text.svg');
+ }
+  
+.papers-item {
+    margin-bottom: 10px;
+}

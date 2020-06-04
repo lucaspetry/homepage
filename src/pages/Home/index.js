@@ -3,6 +3,7 @@ import Header from '../../Header';
 import { FaGithub, FaLinkedin, FaOrcid, FaResearchgate } from 'react-icons/fa';
 import { MdSchool, MdEmail } from 'react-icons/md';
 
+import './styles.css';
 import profileImg from '../../assets/profile.jpg';
 
 export default function Home() {

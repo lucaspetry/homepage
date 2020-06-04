@@ -20,10 +20,10 @@ export default function Header() {
                             className={route.pathname === '/' ? 'active' : null}>
                             <Nav.Link as={Link} to="/">Home</Nav.Link>
                         </Nav.Item>
-                        {/* <Nav.Item
+                        <Nav.Item
                             className={route.pathname === '/projects' ? 'active' : null}>
                             <Nav.Link as={Link} to="/projects">Projects</Nav.Link>
-                        </Nav.Item> */}
+                        </Nav.Item>
                         <Nav.Item
                             className={route.pathname === '/research' ? 'active' : null}>
                             <Nav.Link as={Link} to="/research">Research</Nav.Link>

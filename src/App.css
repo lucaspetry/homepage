@@ -1,5 +1,5 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&display=swap');
 
 * {
   margin: 0;
@@ -55,37 +55,12 @@ body {
 .main-container {
   /* padding: 15px; */
   padding-top: 100px;
+  padding-bottom: 25px;
   -webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
      -moz-animation: fadein 1.5s; /* Firefox < 16 */
       -ms-animation: fadein 1.5s; /* Internet Explorer */
        -o-animation: fadein 1.5s; /* Opera < 12.1 */
           animation: fadein 1.5s;
-}
-
-.profile-img {
-  margin-bottom: 20px;
-  border: 1px solid #FFFFFF;
-  border-radius: 50%;
-  /* height: 40%; */
-  /* object-fit: contain; */
-  width: 250px;
-}
-
-.papers {
-  list-style-image: url('./assets/icon-file-text.svg');
-}
-
-.papers-item {
-  margin-bottom: 10px;
-}
-
-.social-link {
-  margin: 10px;
-  color: #666;
-}
-
-.social-link:hover {
-  color: #000;
 }
 
 @keyframes fadein {

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Papa from 'papaparse';
 import Header from '../../Header';
 
+import './styles.css';
 import publications from '../../assets/publications.tsv';
 
 export default function Research() {
