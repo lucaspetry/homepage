@@ -1,0 +1,15 @@
+.profile-img {
+    margin-bottom: 20px;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    width: 250px;
+}
+
+.social-link {
+    margin: 10px;
+    color: #666;
+}
+
+.social-link:hover {
+    color: #000;
+}
