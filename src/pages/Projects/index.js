@@ -7,6 +7,7 @@ import miningJournalsThumb from '../../assets/projects/mining_journals.png';
 import nbaVisualizationThumb from '../../assets/projects/nba_visualization.gif';
 import tricklingWsnThumb from '../../assets/projects/trickling_wsn.png';
 import smailSimulatorThumb from '../../assets/projects/smail_simulator.jpeg';
+import betheheroThumb from '../../assets/projects/bethehero_app.png';
 
 export default function Projects() {
     return (
@@ -43,6 +44,7 @@ export default function Projects() {
                         url="https://github.com/lucaspetry/bethehero-app"
                         authors={['lucaspetry']}
                         description="App developed during the 11th OmniStack Week (Semana OmniStack 11.0 | Rocketseat). The goal of this project was to create an app that allows Non-Governmental Organizations (NGOs) (e.g. animal shelters) to ask for financial assistance for specific incidents."
+                        image={betheheroThumb}
                         tools={['Javascript', 'Node.JS', 'React', 'React Native']}
                         subjects={['Web App', 'Mobile App']} />
                     <Project
