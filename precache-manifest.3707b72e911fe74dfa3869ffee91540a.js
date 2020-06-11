@@ -1,31 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "212eda9b2ab99d16ffd65b90e1c632d3",
+    "revision": "04743448c8088765e84187cba9240924",
     "url": "/index.html"
   },
   {
-    "revision": "0942182eeb88642fabd0",
+    "revision": "a7df7ba201c1a494bf65",
     "url": "/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "b1d15366ce14262b117a",
+    "revision": "de901602ec399a900030",
     "url": "/static/css/main.7c742a48.chunk.css"
   },
   {
-    "revision": "0942182eeb88642fabd0",
-    "url": "/static/js/2.adaeb142.chunk.js"
+    "revision": "a7df7ba201c1a494bf65",
+    "url": "/static/js/2.4a5fe608.chunk.js"
   },
   {
     "revision": "67b2218b34fc0c291394ab1ce7aeb55f",
-    "url": "/static/js/2.adaeb142.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.4a5fe608.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b1d15366ce14262b117a",
-    "url": "/static/js/main.bf8ecd18.chunk.js"
+    "revision": "de901602ec399a900030",
+    "url": "/static/js/main.4ff99ae8.chunk.js"
   },
   {
     "revision": "2c5b62721a08dcf69ebb",
     "url": "/static/js/runtime-main.661514ca.js"
+  },
+  {
+    "revision": "d03458052cafdaeefc619b3fd7a06d94",
+    "url": "/static/media/bethehero_app.d0345805.png"
   },
   {
     "revision": "09f0201e92b42591f3c447f7cd8704aa",
