@@ -15,14 +15,18 @@ export default function Home() {
                     <img className="profile-img" src={profileImg} alt="" />
                 </div>
 	            <p className="text-justify">
-                    I earned my B.S. (2018) and M.S. (2020) degrees in Computer Science from <a href="http://ufsc.br">Federal University of Santa Catarina</a> (UFSC) in Florianópolis, Brazil. I was a visiting graduate research student at the <a href="https://bigdata.cs.dal.ca/">Institute for Big Data Analytics</a>, <a href="http://dal.ca/">Dalhousie University</a> in Halifax, Canada (Jan. 2019 to Jan. 2020), funded by the Emerging Leaders in the Americas Program (ELAP). I also studied abroad at <a href="http://ucdavis.edu">University of California</a> in Davis, USA, from 2015 to 2016.</p>
-                <p className="text-justify">My career and research interests span from classical machine learning techniques to deep learning, especially in Natural Language Processing (NLP) and Geographical Information Science (GIS). I love collaboration and learning!</p>
+                    I earned my B.S. (2018) and M.S. (2020) degrees in Computer Science from <a href="http://ufsc.br">Federal University of Santa Catarina</a> (UFSC) in Florianópolis, Brazil. I was a visiting graduate research student at the <a href="https://bigdata.cs.dal.ca/">Institute for Big Data Analytics</a>, <a href="http://dal.ca/">Dalhousie University</a> in Halifax, Canada (Jan. 2019 to Jan. 2020), funded by the Emerging Leaders in the Americas Program (ELAP). I also studied abroad at <a href="http://ucdavis.edu">University of California</a> in Davis, USA, from 2015 to 2016.
+                </p>
+                <p className="text-justify">
+                    I currently work as a Data Scientist at <a href="https://mercadolibre.com/" target="_blank">Mercado Livre</a>.
+                    My career and research interests span from classical machine learning to deep learning, especially
+                    in natural language processing.
+                </p>
+                <p className="text-justify">
+                    The best way to contact me is via <a href="http://linkedin.com/in/lucasmaypetry" target="_blank">LinkedIn</a>.
+                </p>
                 <br/><br/>
                 <div className="text-right">
-                    <a className="social-link"
-                       href="mailto:lucas.petry@posgrad.ufsc.br">
-                        <MdEmail size={50} />
-                    </a>
                     <a className="social-link"
                        href="http://linkedin.com/in/lucasmaypetry"
                        target="_blank"

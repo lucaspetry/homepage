@@ -14,6 +14,9 @@ export default function Projects() {
         <>
             <Header />
             <div className="main-container container">
+                <p className="text-justify">
+                    Here are some of the projects I worked on during my undergrad and graduate programs.
+                </p><br/>
                 <div className="projects">
                     <Project
                         title="Mining Journals to the Ground: An Exploratory Analysis of Newspaper Articles"
